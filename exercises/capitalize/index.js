@@ -24,14 +24,14 @@ function capitalize(str) {
 
 
 // option 1 with slice()
-// function capitalize(str) {
-//     const words = []
-//     for(let word of str.split(" ")){
-//         // slice(1) means give me everything from index 1 (second character) to last element in the word
-//         words.push(word[0].toUpperCase() + word.slice(1))
-//     }
+function capitalize(str) {
+    const words = []
+    for(let word of str.split(" ")){
+        // slice(1) means give me everything from index 1 (second character) to last element in the word
+        words.push(word[0].toUpperCase() + word.slice(1))
+    }
 
-//     return words.join(' ')
-// }
+    return words.join(' ')
+}
 
 module.exports = capitalize;
