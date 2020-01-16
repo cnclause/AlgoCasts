@@ -7,11 +7,11 @@
 //   reverse('Greetings!') === '!sgniteerG'
 
 // reduce option
-function reverse(str) {
-  return str.split('').reduce((reversed, character) => {
-    return character + reversed
-  }, '')
-}
+// function reverse(str) {
+//   return str.split('').reduce((reversed, character) => {
+//     return character + reversed
+//   }, '')
+// }
 
 // for loop option
 function reverse(str) {
@@ -22,20 +22,23 @@ function reverse(str) {
     // }
     for(let character of str){
         reversed = character + reversed
+        console.log(reversed)
     }
      
     return reversed
 }
 
-
+reverse('cat')
 // .reverse option
 
-function reverse(str) {
+function reverseOption(str) {
     return str
         .split('')
         .reverse()
         .join('')
 }
+
+reverseOption('cat')
 
 
 module.exports = reverse;

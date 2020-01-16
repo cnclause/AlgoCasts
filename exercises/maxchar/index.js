@@ -33,7 +33,9 @@ function maxChar(str) {
             maxChar = char
         }
     }
-    return maxChar
+    console.log(maxChar)
 }
+
+maxChar('abbbbbbbcy6')
 
 module.exports = maxChar;

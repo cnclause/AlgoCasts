@@ -24,5 +24,18 @@ function reverseInt(n) {
 
 }
 
+function reversingnum(n){
+    const str = n.toString()
+    let reversed = ''
+
+    for(let charct of str){
+        reversed = charct + reversed
+    }
+
+    console.log(parseInt(reversed) * Math.sign(n))
+}
+
+reversingnum(-15002)
+
 
 module.exports = reverseInt;
